@@ -1,4 +1,5 @@
 ﻿using System.Data.Entity;
+using CBMP.Api.Dal.EntityConfigurations;
 using CBMP.Api.Models;
 
 namespace CBMP.Api.Dal
@@ -10,5 +11,11 @@ namespace CBMP.Api.Dal
         }
 
         private DbSet<Badanie> Badania { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new ImieConfiguration());
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
