@@ -96,6 +96,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Dal\AppContext.cs" />
     <Compile Include="Dal\EntityConfigurations\ImieConfiguration.cs" />
+    <Compile Include="Dal\EntityConfigurations\MiejscowoscConfiguration.cs" />
     <Compile Include="Dal\EntityConfigurations\OsobaConfiguration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -119,6 +120,10 @@
     <Compile Include="Migrations\201704192136097_ImieConfiguration.cs" />
     <Compile Include="Migrations\201704192136097_ImieConfiguration.Designer.cs">
       <DependentUpon>201704192136097_ImieConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704192140352_MiejscowoscConfiguration.cs" />
+    <Compile Include="Migrations\201704192140352_MiejscowoscConfiguration.Designer.cs">
+      <DependentUpon>201704192140352_MiejscowoscConfiguration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Badajcy.cs" />
@@ -161,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704192136097_ImieConfiguration.resx">
       <DependentUpon>201704192136097_ImieConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704192140352_MiejscowoscConfiguration.resx">
+      <DependentUpon>201704192140352_MiejscowoscConfiguration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -15,6 +15,7 @@ namespace CBMP.Api.Dal
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new ImieConfiguration());
+            modelBuilder.Configurations.Add(new MiejscowoscConfiguration());
             base.OnModelCreating(modelBuilder);
         }
     }
