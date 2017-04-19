@@ -8,7 +8,7 @@ namespace CBMP.Api.Models
         public DateTime Data { get; set; }
         public int IdOsoba { get; set; }
         public Osoba Osoba { get; set; }
-        public int IdBadajacy{ get; set; }
+        public int IdBadajacy { get; set; }
         public Badajcy Badajcy { get; set; }
         public int IdRodzajBadania { get; set; }
         public RodzajBadania RodzajBadania { get; set; }

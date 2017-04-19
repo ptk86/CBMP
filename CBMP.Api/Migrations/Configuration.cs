@@ -1,18 +1,16 @@
+using System.Data.Entity.Migrations;
+using CBMP.Api.Dal;
+
 namespace CBMP.Api.Migrations
 {
-    using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
-
-    internal sealed class Configuration : DbMigrationsConfiguration<CBMP.Api.Dal.AppContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<AppContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(CBMP.Api.Dal.AppContext context)
+        protected override void Seed(AppContext context)
         {
             //  This method will be called after migrating to the latest version.
 
