@@ -106,11 +106,17 @@
     <Compile Include="Migrations\201704192051221_Osoba.Designer.cs">
       <DependentUpon>201704192051221_Osoba.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704192059035_ImieIMiejscowosc.cs" />
+    <Compile Include="Migrations\201704192059035_ImieIMiejscowosc.Designer.cs">
+      <DependentUpon>201704192059035_ImieIMiejscowosc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Badajcy.cs" />
     <Compile Include="Models\Badanie.cs" />
+    <Compile Include="Models\Imie.cs" />
     <Compile Include="Models\Kierujacy.cs" />
     <Compile Include="Models\Lokalizacja.cs" />
+    <Compile Include="Models\Miejscowosc.cs" />
     <Compile Include="Models\Osoba.cs" />
     <Compile Include="Models\Pracodawca.cs" />
     <Compile Include="Models\RodzajBadania.cs" />
@@ -136,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704192051221_Osoba.resx">
       <DependentUpon>201704192051221_Osoba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704192059035_ImieIMiejscowosc.resx">
+      <DependentUpon>201704192059035_ImieIMiejscowosc.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
