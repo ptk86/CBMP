@@ -15,11 +15,11 @@ namespace CBMP.Api.Dal.EntityConfigurations
 
             Property(o => o.Nazwisko).IsRequired().HasMaxLength(64);
 
-            HasRequired(o => o.MiejsceUrodzenia).WithMany(m => m.UrodzeoneOsoby).HasForeignKey(o => o.MiejsceUrodzeniaId).WillCascadeOnDelete(false);
+            HasRequired(o => o.MiejsceUrodzenia).WithMany(m => m.Urodzeni).HasForeignKey(o => o.MiejsceUrodzeniaId).WillCascadeOnDelete(false);
 
             Property(o => o.KodPocztowy).IsRequired().HasMaxLength(8);
 
-            HasRequired(o => o.MiejsceZamieszkania).WithMany(m => m.ZamieszkujaceOsoby).HasForeignKey(o => o.MiejsceZamieszkaniaId).WillCascadeOnDelete(false);
+            HasRequired(o => o.MiejsceZamieszkania).WithMany(m => m.Zamieszkujacy).HasForeignKey(o => o.MiejsceZamieszkaniaId).WillCascadeOnDelete(false);
 
             Property(o => o.Ulica).IsRequired().HasMaxLength(64);
 

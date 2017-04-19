@@ -105,6 +105,10 @@
     <Compile Include="Migrations\201704192344515_Initial.Designer.cs">
       <DependentUpon>201704192344515_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704192352576_PropertiesName_Fix.cs" />
+    <Compile Include="Migrations\201704192352576_PropertiesName_Fix.Designer.cs">
+      <DependentUpon>201704192352576_PropertiesName_Fix.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Badajcy.cs" />
     <Compile Include="Models\Badanie.cs" />
@@ -134,6 +138,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201704192344515_Initial.resx">
       <DependentUpon>201704192344515_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704192352576_PropertiesName_Fix.resx">
+      <DependentUpon>201704192352576_PropertiesName_Fix.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

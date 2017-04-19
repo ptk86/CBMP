@@ -7,13 +7,13 @@ namespace CBMP.Api.Models
     {
         public int Id { get; set; }
         public string Nazwa { get; set; }
-        public ICollection<Osoba> UrodzeoneOsoby { get; set; }
-        public ICollection<Osoba> ZamieszkujaceOsoby { get; set; }
+        public ICollection<Osoba> Urodzeni { get; set; }
+        public ICollection<Osoba> Zamieszkujacy { get; set; }
 
         public Miejscowosc()
         {
-            UrodzeoneOsoby = new Collection<Osoba>();
-            ZamieszkujaceOsoby = new Collection<Osoba>();
+            Urodzeni = new Collection<Osoba>();
+            Zamieszkujacy = new Collection<Osoba>();
         }
     }
 }
