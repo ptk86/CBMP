@@ -12,13 +12,14 @@ namespace CBMP.Api.Models
 
         public int Id { get; set; }
         public string Pesel { get; set; }
+        public int ImieId { get; set; }
         public Imie Imie { get; set; }
         public string Nazwisko { get; set; }
-        public int IdMiejsceUrodzenia { get; set; }
+        public int MiejsceUrodzeniaId { get; set; }
         public Miejscowosc MiejsceUrodzenia { get; set; }
         public string KodPocztowy { get; set; }
-        public int IdMiejscowosc { get; set; }
-        public Miejscowosc Miejscowosc { get; set; }
+        public int MiejsceZamieszkaniaId { get; set; }
+        public Miejscowosc MiejsceZamieszkania { get; set; }
         public string Ulica { get; set; }
         public string NumerDomu { get; set; }
         public ICollection<Badanie> Badania { get; set; }

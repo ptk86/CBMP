@@ -13,7 +13,7 @@ namespace CBMP.Api.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201704191947069_Initial"; }
+            get { return "201704192344515_Initial"; }
         }
         
         string IMigrationMetadata.Source

@@ -11,7 +11,19 @@ namespace CBMP.Api.Dal.EntityConfigurations
 
             HasKey(o => o.Id);
 
-            HasRequired(o => o.Imie);
+            HasRequired(o => o.Imie).WithMany(i => i.Osoby).HasForeignKey(o => o.ImieId).WillCascadeOnDelete(false);
+
+            Property(o => o.Nazwisko).IsRequired().HasMaxLength(64);
+
+            HasRequired(o => o.MiejsceUrodzenia).WithMany(m => m.UrodzeoneOsoby).HasForeignKey(o => o.MiejsceUrodzeniaId).WillCascadeOnDelete(false);
+
+            Property(o => o.KodPocztowy).IsRequired().HasMaxLength(8);
+
+            HasRequired(o => o.MiejsceZamieszkania).WithMany(m => m.ZamieszkujaceOsoby).HasForeignKey(o => o.MiejsceZamieszkaniaId).WillCascadeOnDelete(false);
+
+            Property(o => o.Ulica).IsRequired().HasMaxLength(64);
+
+            Property(o => o.NumerDomu).IsRequired().HasMaxLength(16);
         }
     }
 }

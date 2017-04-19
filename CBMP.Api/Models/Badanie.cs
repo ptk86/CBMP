@@ -12,11 +12,11 @@ namespace CBMP.Api.Models
         public Badajcy Badajcy { get; set; }
         public int IdRodzajBadania { get; set; }
         public RodzajBadania RodzajBadania { get; set; }
-        public int IdKierujacy { get; set; }
+        public int KierujacyId { get; set; }
         public Kierujacy Kierujacy { get; set; }
-        public int IdPracodawda { get; set; }
+        public int PracodawdaId { get; set; }
         public Pracodawca Pracodawca { get; set; }
-        public int IdLokalizacja { get; set; }
+        public int LokalizacjaId { get; set; }
         public Lokalizacja Lokalizacja { get; set; }
     }
 }
