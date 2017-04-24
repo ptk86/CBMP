@@ -99,6 +99,7 @@
     <Compile Include="Dal\EntityConfigurations\BadajacyConfiguation.cs" />
     <Compile Include="Dal\EntityConfigurations\BadanieConfiguration.cs" />
     <Compile Include="Dal\EntityConfigurations\ImieConfiguration.cs" />
+    <Compile Include="Dal\EntityConfigurations\KierujacyConfiguration.cs" />
     <Compile Include="Dal\EntityConfigurations\MiejscowoscConfiguration.cs" />
     <Compile Include="Dal\EntityConfigurations\OsobaConfiguration.cs" />
     <Compile Include="Dal\EntityConfigurations\RodzajBadaniaConfiguration.cs" />
@@ -128,6 +129,10 @@
     <Compile Include="Migrations\201704242224387_RodzajBadaniaConfiguration.cs" />
     <Compile Include="Migrations\201704242224387_RodzajBadaniaConfiguration.Designer.cs">
       <DependentUpon>201704242224387_RodzajBadaniaConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704242250212_SieciowiecToClassFromEnum.cs" />
+    <Compile Include="Migrations\201704242250212_SieciowiecToClassFromEnum.Designer.cs">
+      <DependentUpon>201704242250212_SieciowiecToClassFromEnum.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Badajcy.cs" />
@@ -173,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704242224387_RodzajBadaniaConfiguration.resx">
       <DependentUpon>201704242224387_RodzajBadaniaConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704242250212_SieciowiecToClassFromEnum.resx">
+      <DependentUpon>201704242250212_SieciowiecToClassFromEnum.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

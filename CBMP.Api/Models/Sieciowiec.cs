@@ -1,9 +1,8 @@
 ﻿namespace CBMP.Api.Models
 {
-    public enum Sieciowiec
+    public class Sieciowiec
     {
-        Brak,
-        LuxMed,
-        TuZdrowie
+        public int Id { get; set; }
+        public string Nazwa { get; set; }
     }
 }

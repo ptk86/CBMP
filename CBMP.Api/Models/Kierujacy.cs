@@ -11,8 +11,9 @@ namespace CBMP.Api.Models
         }
 
         public int Id { get; set; }
-        public string Nazwa { get; set; }
         public bool CzyMedycynaPracy { get; set; }
+        public string Nazwa { get; set; }
+        public int SieciowiecId { get; set; }
         public Sieciowiec Sieciowiec { get; set; }
         public ICollection<Badanie> Badania { get; set; }
     }
