@@ -11,7 +11,7 @@ namespace CBMP.Api.Dal.EntityConfigurations
 
             HasKey(i => i.Id);
 
-            Property(i => i.Nazwa).IsRequired().HasMaxLength(20);
+            Property(i => i.Nazwa).IsRequired().HasMaxLength(32);
         }
     }
 }
