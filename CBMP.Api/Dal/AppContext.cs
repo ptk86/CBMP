@@ -1,6 +1,12 @@
 ﻿using System.Data.Entity;
 using CBMP.Api.Dal.EntityConfigurations;
+using CBMP.Api.Migrations;
 using CBMP.Api.Models;
+using BadanieConfiguration = CBMP.Api.Dal.EntityConfigurations.BadanieConfiguration;
+using KierujacyConfiguration = CBMP.Api.Dal.EntityConfigurations.KierujacyConfiguration;
+using RodzajBadaniaConfiguration = CBMP.Api.Dal.EntityConfigurations.RodzajBadaniaConfiguration;
+using SieciowiecConfiguration = CBMP.Api.Dal.EntityConfigurations.SieciowiecConfiguration;
+
 
 namespace CBMP.Api.Dal
 {
@@ -21,6 +27,7 @@ namespace CBMP.Api.Dal
             modelBuilder.Configurations.Add(new BadajacyConfiguation());
             modelBuilder.Configurations.Add(new RodzajBadaniaConfiguration());
             modelBuilder.Configurations.Add(new KierujacyConfiguration());
+            modelBuilder.Configurations.Add(new SieciowiecConfiguration());
             base.OnModelCreating(modelBuilder);
         }
     }
