@@ -20,6 +20,7 @@ namespace CBMP.Api.Dal
             modelBuilder.Configurations.Add(new BadanieConfiguration());
             modelBuilder.Configurations.Add(new BadajacyConfiguation());
             modelBuilder.Configurations.Add(new RodzajBadaniaConfiguration());
+            modelBuilder.Configurations.Add(new KierujacyConfiguration());
             base.OnModelCreating(modelBuilder);
         }
     }

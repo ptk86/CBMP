@@ -134,6 +134,10 @@
     <Compile Include="Migrations\201704242250212_SieciowiecToClassFromEnum.Designer.cs">
       <DependentUpon>201704242250212_SieciowiecToClassFromEnum.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704242259022_KierujacyConfiguration.cs" />
+    <Compile Include="Migrations\201704242259022_KierujacyConfiguration.Designer.cs">
+      <DependentUpon>201704242259022_KierujacyConfiguration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Badajcy.cs" />
     <Compile Include="Models\Badanie.cs" />
@@ -181,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704242250212_SieciowiecToClassFromEnum.resx">
       <DependentUpon>201704242250212_SieciowiecToClassFromEnum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704242259022_KierujacyConfiguration.resx">
+      <DependentUpon>201704242259022_KierujacyConfiguration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
