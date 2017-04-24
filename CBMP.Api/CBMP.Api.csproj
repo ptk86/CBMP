@@ -143,6 +143,10 @@
     <Compile Include="Migrations\201704242316196_SieciowiecConfiguration.Designer.cs">
       <DependentUpon>201704242316196_SieciowiecConfiguration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704242322591_PracodwacaSepllingCorrection.cs" />
+    <Compile Include="Migrations\201704242322591_PracodwacaSepllingCorrection.Designer.cs">
+      <DependentUpon>201704242322591_PracodwacaSepllingCorrection.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Badajcy.cs" />
     <Compile Include="Models\Badanie.cs" />
@@ -196,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704242316196_SieciowiecConfiguration.resx">
       <DependentUpon>201704242316196_SieciowiecConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704242322591_PracodwacaSepllingCorrection.resx">
+      <DependentUpon>201704242322591_PracodwacaSepllingCorrection.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

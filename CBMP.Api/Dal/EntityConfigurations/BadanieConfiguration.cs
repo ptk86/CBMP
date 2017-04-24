@@ -23,7 +23,7 @@ namespace CBMP.Api.Dal.EntityConfigurations
 
             HasOptional(b => b.Sieciowiec).WithMany(s => s.Badania).HasForeignKey(b => b.SieciowiecId).WillCascadeOnDelete(false);
 
-            HasRequired(b => b.Pracodawca).WithMany(o => o.Badania).HasForeignKey(b => b.PracodawdaId).WillCascadeOnDelete(false);
+            HasRequired(b => b.Pracodawca).WithMany(o => o.Badania).HasForeignKey(b => b.PracodawcaId).WillCascadeOnDelete(false);
 
             HasRequired(b => b.Lokalizacja).WithMany(o => o.Badania).HasForeignKey(b => b.LokalizacjaId).WillCascadeOnDelete(false);
         }

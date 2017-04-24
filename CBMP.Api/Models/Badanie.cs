@@ -17,8 +17,7 @@ namespace CBMP.Api.Models
         public Kierujacy Kierujacy { get; set; }
         public int? SieciowiecId { get; set; }
         public Sieciowiec Sieciowiec { get; set; }
-//        TODO: Literówka
-        public int PracodawdaId { get; set; }
+        public int PracodawcaId { get; set; }
         public Pracodawca Pracodawca { get; set; }
         public int LokalizacjaId { get; set; }
         public Lokalizacja Lokalizacja { get; set; }
