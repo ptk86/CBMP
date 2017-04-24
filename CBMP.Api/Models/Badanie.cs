@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web.UI.WebControls;
 
 namespace CBMP.Api.Models
 {
@@ -14,6 +15,9 @@ namespace CBMP.Api.Models
         public RodzajBadania RodzajBadania { get; set; }
         public int KierujacyId { get; set; }
         public Kierujacy Kierujacy { get; set; }
+        public int? SieciowiecId { get; set; }
+        public Sieciowiec Sieciowiec { get; set; }
+//        TODO: Literówka
         public int PracodawdaId { get; set; }
         public Pracodawca Pracodawca { get; set; }
         public int LokalizacjaId { get; set; }

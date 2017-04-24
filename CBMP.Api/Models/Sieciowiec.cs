@@ -6,6 +6,6 @@ namespace CBMP.Api.Models
     {
         public int Id { get; set; }
         public string Nazwa { get; set; }
-        public ICollection<Kierujacy> Kierujacy { get; set; }
+        public ICollection<Badanie> Badania { get; set; }
     }
 }

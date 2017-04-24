@@ -103,6 +103,7 @@
     <Compile Include="Dal\EntityConfigurations\MiejscowoscConfiguration.cs" />
     <Compile Include="Dal\EntityConfigurations\OsobaConfiguration.cs" />
     <Compile Include="Dal\EntityConfigurations\RodzajBadaniaConfiguration.cs" />
+    <Compile Include="Dal\EntityConfigurations\SieciowiecConfiguration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -137,6 +138,10 @@
     <Compile Include="Migrations\201704242259022_KierujacyConfiguration.cs" />
     <Compile Include="Migrations\201704242259022_KierujacyConfiguration.Designer.cs">
       <DependentUpon>201704242259022_KierujacyConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704242316196_SieciowiecConfiguration.cs" />
+    <Compile Include="Migrations\201704242316196_SieciowiecConfiguration.Designer.cs">
+      <DependentUpon>201704242316196_SieciowiecConfiguration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Badajcy.cs" />
@@ -188,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704242259022_KierujacyConfiguration.resx">
       <DependentUpon>201704242259022_KierujacyConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704242316196_SieciowiecConfiguration.resx">
+      <DependentUpon>201704242316196_SieciowiecConfiguration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
