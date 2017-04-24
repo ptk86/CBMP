@@ -18,6 +18,7 @@ namespace CBMP.Api.Dal
             modelBuilder.Configurations.Add(new MiejscowoscConfiguration());
             modelBuilder.Configurations.Add(new OsobaConfiguration());
             modelBuilder.Configurations.Add(new BadanieConfiguration());
+            modelBuilder.Configurations.Add(new BadajacyConfiguation());
             base.OnModelCreating(modelBuilder);
         }
     }
