@@ -100,6 +100,7 @@
     <Compile Include="Dal\EntityConfigurations\BadanieConfiguration.cs" />
     <Compile Include="Dal\EntityConfigurations\ImieConfiguration.cs" />
     <Compile Include="Dal\EntityConfigurations\KierujacyConfiguration.cs" />
+    <Compile Include="Dal\EntityConfigurations\LokalizacjiaConfiguration.cs" />
     <Compile Include="Dal\EntityConfigurations\MiejscowoscConfiguration.cs" />
     <Compile Include="Dal\EntityConfigurations\OsobaConfiguration.cs" />
     <Compile Include="Dal\EntityConfigurations\PracodawcaConfiguration.cs" />
@@ -151,6 +152,10 @@
     <Compile Include="Migrations\201704242329380_PracodawcaConfiguration.cs" />
     <Compile Include="Migrations\201704242329380_PracodawcaConfiguration.Designer.cs">
       <DependentUpon>201704242329380_PracodawcaConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704242334440_LokalizacjaConfiguration.cs" />
+    <Compile Include="Migrations\201704242334440_LokalizacjaConfiguration.Designer.cs">
+      <DependentUpon>201704242334440_LokalizacjaConfiguration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Badajcy.cs" />
@@ -211,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704242329380_PracodawcaConfiguration.resx">
       <DependentUpon>201704242329380_PracodawcaConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704242334440_LokalizacjaConfiguration.resx">
+      <DependentUpon>201704242334440_LokalizacjaConfiguration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

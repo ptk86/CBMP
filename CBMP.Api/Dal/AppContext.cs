@@ -7,6 +7,7 @@ using KierujacyConfiguration = CBMP.Api.Dal.EntityConfigurations.KierujacyConfig
 using RodzajBadaniaConfiguration = CBMP.Api.Dal.EntityConfigurations.RodzajBadaniaConfiguration;
 using SieciowiecConfiguration = CBMP.Api.Dal.EntityConfigurations.SieciowiecConfiguration;
 using PracodawcaConfiguration = CBMP.Api.Dal.EntityConfigurations.PracodawcaConfiguration;
+using LokalizacjaConfiguration = CBMP.Api.Dal.EntityConfigurations.LokalizacjaConfiguration;
 
 
 namespace CBMP.Api.Dal
@@ -30,6 +31,7 @@ namespace CBMP.Api.Dal
             modelBuilder.Configurations.Add(new KierujacyConfiguration());
             modelBuilder.Configurations.Add(new SieciowiecConfiguration());
             modelBuilder.Configurations.Add(new PracodawcaConfiguration());
+            modelBuilder.Configurations.Add(new LokalizacjaConfiguration());
             base.OnModelCreating(modelBuilder);
         }
     }
