@@ -102,6 +102,7 @@
     <Compile Include="Dal\EntityConfigurations\KierujacyConfiguration.cs" />
     <Compile Include="Dal\EntityConfigurations\MiejscowoscConfiguration.cs" />
     <Compile Include="Dal\EntityConfigurations\OsobaConfiguration.cs" />
+    <Compile Include="Dal\EntityConfigurations\PracodawcaConfiguration.cs" />
     <Compile Include="Dal\EntityConfigurations\RodzajBadaniaConfiguration.cs" />
     <Compile Include="Dal\EntityConfigurations\SieciowiecConfiguration.cs" />
     <Compile Include="Global.asax.cs">
@@ -146,6 +147,10 @@
     <Compile Include="Migrations\201704242322591_PracodwacaSepllingCorrection.cs" />
     <Compile Include="Migrations\201704242322591_PracodwacaSepllingCorrection.Designer.cs">
       <DependentUpon>201704242322591_PracodwacaSepllingCorrection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704242329380_PracodawcaConfiguration.cs" />
+    <Compile Include="Migrations\201704242329380_PracodawcaConfiguration.Designer.cs">
+      <DependentUpon>201704242329380_PracodawcaConfiguration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Badajcy.cs" />
@@ -203,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704242322591_PracodwacaSepllingCorrection.resx">
       <DependentUpon>201704242322591_PracodwacaSepllingCorrection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704242329380_PracodawcaConfiguration.resx">
+      <DependentUpon>201704242329380_PracodawcaConfiguration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
