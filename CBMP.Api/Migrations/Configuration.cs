@@ -41,7 +41,6 @@ namespace CBMP.Api.Migrations
 
             context.Osoby.Add(osoba);
 
-
             base.Seed(context);
             context.SaveChanges();
         }
