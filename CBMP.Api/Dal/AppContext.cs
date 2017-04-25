@@ -18,7 +18,10 @@ namespace CBMP.Api.Dal
         {
         }
 
-        private DbSet<Badanie> Badania { get; set; }
+        public DbSet<Badanie> Badania { get; set; }
+        public DbSet<Imie> Imiona { get; set; }
+        public DbSet<Osoba> Osoby { get; set; }
+        public DbSet<Miejscowosc> Miejscowosci { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
