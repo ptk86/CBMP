@@ -8,6 +8,7 @@ using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using CBMP.Api.Dal;
 using CBMP.Api.Dtos;
+using CBMP.Api.Models;
 
 namespace CBMP.Api.Controllers
 {
@@ -31,6 +32,32 @@ namespace CBMP.Api.Controllers
             var osobaDto = Mapper.Map<OsobaDto>(osoba);
 
             return Ok(osobaDto);
+        }
+
+        [HttpGet]
+        public IHttpActionResult Get(string pesel)
+        {
+            var osoba = _ctx.Osoby.FirstOrDefault(o => o.Pesel == pesel);
+            if (osoba == null)
+                return NotFound();
+            var osobaDto = Mapper.Map<OsobaDto>(osoba);
+
+            return Ok(osobaDto);
+        }
+
+        [HttpGet]
+        public IHttpActionResult GetAll()
+        {
+            var osoby = _ctx.Osoby;
+            if (osoby == null)
+                return NotFound();
+            var osobyDto = new List<OsobaDto>();
+            foreach (var osoba in osoby)
+            {
+                osobyDto.Add(Mapper.Map<OsobaDto>(osoba));
+            }
+
+            return Ok(osobyDto);
         }
     }
 }
